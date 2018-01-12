@@ -1,0 +1,19 @@
+Line one will contain:
+    length in cm of each line on the sign. Floating point.
+    
+Second line will contain:
+    number of lines on one side of the sign. Integer.
+    
+
+Remaining lines each contain a [String]|[int]|[float].
+    [String] is the character on a sign piece.
+    [int] is the number of sign pieces of that character.
+    [float] is the width in cm of that sign piece.
+    Ex/ 
+        A|2|2.5
+        B|3|2.5
+        "|1|4
+        :|4|4
+        -|2|4
+        etc
+
