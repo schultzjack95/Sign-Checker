@@ -90,7 +90,7 @@ public class SignChecker {
         // Check if there are enough pieces to write the desired string
         boolean enoughPieces = true;
         for (Map.Entry<String, Integer> entry : required_pieces.entrySet()) {
-            if (entry.getKey().equals("\n")) continue;
+            if (entry.getKey().equals("\n") || entry.getKey().equals(" ")) continue;
             int extraPieces = available_pieces.getOrDefault(
                     entry.getKey(), new LetterInfo(0, 1)).getCount()- entry.getValue().intValue();
             if (extraPieces < 0) {
